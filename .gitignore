@@ -1,0 +1,15 @@
+dist
+types
+node_modules
+src/*
+
+pnpm-lock.yaml
+
+.DS_Store
+
+.idea
+.vscode
+
+.eslintcache
+*.tsbuildinfo
+*.log
