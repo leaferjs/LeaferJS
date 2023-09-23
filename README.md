@@ -4,7 +4,23 @@
 
 ## 运行
 
-整合运行 [leafer](https://github.com/leaferjs/leafer)、[ui](https://github.com/leaferjs/ui)、[in](https://github.com/leaferjs/in) 所有子仓库的代码，可以测试、自定义打包 LeaferJS。
+整合运行所有子仓库的代码，可以测试、自定义打包 LeaferJS。
+
+git clone [leafer](https://github.com/leaferjs/leafer)、[ui](https://github.com/leaferjs/ui)、[in](https://github.com/leaferjs/in) 到 src 目录下:
+
+```
+src/leafer
+src/ui
+src/in
+```
+
+然后安装运行
+
+```sh
+npm install
+
+npm run start
+```
 
 ### 资源
 

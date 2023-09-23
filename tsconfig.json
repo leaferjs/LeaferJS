@@ -40,16 +40,7 @@
             "leafer-in": ["src/in/src"],
             "@leafer-in/*": [
                 "src/in/packages/*/src", 
-            ],
-            "leafer-light": ["src/light/src"],
-            "@leafer-light/*": [
-                "src/light/packages/*/src",  
-            ],
-            "leafer-case": ["src/case/src"],
-            "@leafer-case/*": [
-                "src/case/packages/*/src",  
-            ],
-            "leafer-ui-node": ["src/node/src"],
+            ]
         },
     },
     "exclude": [
@@ -58,8 +49,7 @@
         "**/dist/**",
         "**/lib/**",
         "**/scripts/**",
-        "**/types/**",
-        "rollup.config.js"
+        "**/types/**"
     ],
     "ts-node": {
         "files": true,
