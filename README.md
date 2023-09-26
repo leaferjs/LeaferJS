@@ -25,7 +25,7 @@ npm run start
 
 ```
 
-将自动在本地创建一个 LeaferJS 项目，并下载 leafer、ui、in 的代码到 src 目录下。
+将自动在本地创建一个 LeaferJS 项目，并下载 leafer、ui、in 仓库的代码到 src 目录下。
 
 安装启动完成后，可在浏览器中访问 index.ts 的内容：http://localhost:10101
 
