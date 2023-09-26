@@ -2,33 +2,60 @@
 
 绚丽多彩的 HTML5 Canvas 2D 图形渲染引擎， 可结合 AI 绘图、生成界面。能让你拥有瞬间创建 100 万个图形的超强能力，免费开源、易学易用、场景丰富。
 
-## 运行
+## 运行 LeaferJS
 
-整合运行所有子仓库的代码，可以测试、自定义打包 LeaferJS。
+LeaferJS 依赖子仓库 leafer、ui、in 的代码，放置在 src 目录下。
 
-git clone [leafer](https://github.com/leaferjs/leafer)、[ui](https://github.com/leaferjs/ui)、[in](https://github.com/leaferjs/in) 到 src 目录下:
+### 安装
 
-```
-src/leafer
-src/ui
-src/in
-```
-
-然后安装运行
+复制以下命令并运行：
 
 ```sh
-npm install
+git clone https://github.com/leaferjs/LeaferJS.git
 
+cd LeaferJS/src
+
+git clone https://github.com/leaferjs/leafer.git
+git clone https://github.com/leaferjs/ui.git
+git clone https://github.com/leaferjs/in.git
+
+cd ../
+
+npm install
+```
+
+### 启动
+
+启动后在浏览器中访问：http://localhost:10101
+
+```sh
 npm run start
+```
+
+## 调试代码
+
+index.ts 是入口文件，复制官网示例代码到 index.ts 中可以直接调试运行。
+
+### 自定义打包
+
+```sh
+
+npm run core # 打包核心代码，环境打包的依赖项
+
+npm run web # 仅打包web环境代码
+
+npm run all # 打包所有环境的代码
+
+npm run dts # 为所有包生成d.ts文件
+
+npm run clear # 清空所有打包内容
+
+
 ```
 
 ### 资源
 
 [官方网站](https://www.leaferjs.com)
-
-[快速上手](https://www.leaferjs.com/ui/guide)
-
-[快速安装](https://www.leaferjs.com/ui/guide/start.html)
 
 ### License
 

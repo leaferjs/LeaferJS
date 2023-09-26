@@ -1,7 +1,10 @@
 dist
 types
 node_modules
-src/*
+
+src/leafer
+src/ui
+src/in
 
 pnpm-lock.yaml
 
