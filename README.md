@@ -32,7 +32,7 @@ npm install
 npm run start
 ```
 
-## 调试代码
+### 调试代码
 
 index.ts 是入口文件，复制官网示例代码到 index.ts 中可以直接调试运行。
 
@@ -53,10 +53,6 @@ npm run clear # 清空所有打包内容
 
 ```
 
-### 资源
-
-[官方网站](https://www.leaferjs.com)
-
-### License
+## License
 
 LeaferJS 是采用 MIT 许可的开源项目，可以永久免费使用。
