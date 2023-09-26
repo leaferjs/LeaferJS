@@ -2,9 +2,9 @@
 
 绚丽多彩的 HTML5 Canvas 2D 图形渲染引擎， 可结合 AI 绘图、生成界面。能让你拥有瞬间创建 100 万个图形的超强能力，免费开源、易学易用、场景丰富。
 
-## 运行 LeaferJS
+## 运行
 
-LeaferJS 依赖子仓库 leafer、ui、in 的代码，放置在 src 目录下。
+LeaferJS 依赖子仓库 leafer、ui、in 的代码。
 
 复制以下命令并运行：
 
@@ -25,13 +25,15 @@ npm run start
 
 ```
 
-在浏览器中访问：http://localhost:10101
+将自动在本地创建一个 LeaferJS 项目，并下载 leafer、ui、in 的代码到 src 目录下。
 
-### 调试代码
+安装启动完成后，可在浏览器中访问 index.ts 的内容：http://localhost:10101
+
+## 调试
 
 index.ts 是入口文件，复制官网示例代码到 index.ts 中可以直接调试运行。
 
-### 自定义打包
+## 打包
 
 ```sh
 
