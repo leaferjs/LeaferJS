@@ -6,11 +6,10 @@
 
 LeaferJS 依赖子仓库 leafer、ui、in 的代码，放置在 src 目录下。
 
-### 安装
-
 复制以下命令并运行：
 
 ```sh
+
 git clone https://github.com/leaferjs/LeaferJS.git
 
 cd LeaferJS/src
@@ -22,15 +21,11 @@ git clone https://github.com/leaferjs/in.git
 cd ../
 
 npm install
-```
-
-### 启动
-
-启动后在浏览器中访问：http://localhost:10101
-
-```sh
 npm run start
+
 ```
+
+在浏览器中访问：http://localhost:10101
 
 ### 调试代码
 
