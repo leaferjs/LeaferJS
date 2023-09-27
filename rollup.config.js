@@ -104,7 +104,7 @@ if(isDev) {
                 meta: [{charset: 'utf-8'}, {name: 'viewport', content: 'width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no'}]
             }),
             livereload(),
-            serve({contentBase: ['./'],  port})
+            serve({contentBase: ['dist/'],  port})
         ]
     }
 
