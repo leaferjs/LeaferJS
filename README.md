@@ -12,13 +12,8 @@ LeaferJS 依赖子仓库 leafer、ui、in 的代码。
 
 git clone https://github.com/leaferjs/LeaferJS.git
 
-cd LeaferJS/src
-
-git clone https://github.com/leaferjs/leafer.git
-git clone https://github.com/leaferjs/ui.git
-git clone https://github.com/leaferjs/in.git
-
-cd ../
+git submodule init
+git submodule update
 
 npm install
 npm run start

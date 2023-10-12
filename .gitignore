@@ -2,10 +2,6 @@ dist
 types
 node_modules
 
-src/leafer
-src/ui
-src/in
-
 pnpm-lock.yaml
 
 .DS_Store
