@@ -4,31 +4,34 @@
 
 ## 运行
 
-LeaferJS 依赖子仓库 leafer、ui、in 的代码。
+LeaferJS 完全依赖于子仓库 [leafer](https://github.com/leaferjs/leafer)、[leafer-ui](https://github.com/leaferjs/ui)、[leafer-in](https://github.com/leaferjs/in) ， 提供运行官网示例代码、自定义打包的能力。
 
 复制以下命令并运行：
 
 ```sh
 
-git clone https://github.com/leaferjs/LeaferJS.git
+git clone  https://github.com/leaferjs/LeaferJS.git --recurse-submodules
 
 cd LeaferJS
-
-git submodule init
-git submodule update
 
 npm install
 npm run start
 
 ```
 
-将自动在本地创建一个 LeaferJS 项目，并下载 leafer、ui、in 仓库的代码到 src 目录下。
+将在本地创建一个 LeaferJS 项目，并自动下载 [leafer](https://github.com/leaferjs/leafer)、[leafer-ui](https://github.com/leaferjs/ui)、[leafer-in](https://github.com/leaferjs/in) 子仓库代码到 src 目录。
 
-安装启动完成后，可在浏览器中访问 index.ts 的内容：http://localhost:10101
+安装启动完成后，可在浏览器中访问：http://localhost:10101
 
-## 调试
+复制 [官网](https://leaferjs.com) 示例代码到 index.ts 中，可以实时查看运行效果。
 
-index.ts 是入口文件，复制官网示例代码到 index.ts 中可以直接调试运行。
+## 更新
+
+```sh
+
+git pull --recurse-submodules
+
+```
 
 ## 打包
 
