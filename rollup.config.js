@@ -68,6 +68,13 @@ const platform ={
             withGlobal: 'LeaferIN.editor',
             withMin: 'min',
             external
+        },
+        {
+            name: 'html',
+            path:  inPath + '/html',
+            withGlobal: 'LeaferIN.html',
+            withMin: 'min',
+            external
         }
     ]
 } 
