@@ -15,23 +15,69 @@ const platformName = process.env.PLATFORM
 const dtsPackage = process.env.DTS_PACKAGE
 
 const LeaferUI = 'LeaferUI'
-const external = { '@leafer/core': LeaferUI,  '@leafer-ui/core': LeaferUI}
+const external = { '@leafer/core': LeaferUI, '@leafer-ui/draw': LeaferUI, '@leafer-ui/core': LeaferUI}
 
 const inPath = 'src/in/packages'
 const platformPath = 'src/ui/packages/platform'
+const drawPlatformPath = 'src/draw/packages/platform'
 
 const platform ={
     'core': [
         {
+            dist: 'lib',
             path: 'src/leafer/packages/core',
             withMin: 'min',
             withFormat: ['cjs']
         }, 
         {
-            path: 'src/ui/packages/core',
+            name: 'draw',
+            dist: 'lib',
+            path: 'src/ui/packages/core/draw',
             withMin: 'min',
             withFormat: ['cjs'],
             external: { '@leafer/core': LeaferUI}
+        },
+        {
+            dist: 'lib',
+            path: 'src/ui/packages/core/core',
+            withMin: 'min',
+            withFormat: ['cjs'],
+            external: { '@leafer-ui/draw': LeaferUI, '@leafer/core': LeaferUI }
+        }
+    ],
+
+    'draw': [
+        {
+            name: 'web',
+            path: 'src/draw',
+            withGlobal: LeaferUI,
+            withMin: 'min',
+            external,
+            fullGlobal: true,
+            withModule: true
+        },
+        {
+            name: 'worker',
+            path:  drawPlatformPath + '/worker',
+            withGlobal: LeaferUI,
+            withMin: 'min',
+            external,
+            fullGlobal: true,
+            withModule: true
+        },
+        {
+            name: 'node',
+            path:  drawPlatformPath + '/node',
+            withMin: 'min',
+            withFormat: ['cjs'],
+            external: {...external, 'fs': 'fs'}
+        },
+        {
+            name: 'miniapp',
+            path:  drawPlatformPath + '/miniapp',
+            withMin: 'min',
+            external,
+            withModule: true
         }
     ],
 

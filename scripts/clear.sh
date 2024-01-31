@@ -11,6 +11,7 @@ function loop() {
         else 
             if [ $file == "package.json" ];then
                 rm -rf $1/dist
+                rm -rf $1/lib
                 rm -rf $1/types
                 rm -rf $1/node_modules
                 echo $1
@@ -20,5 +21,6 @@ function loop() {
 }
 
 loop src/leafer
+loop src/draw
 loop src/ui
 loop src/in

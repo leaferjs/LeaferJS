@@ -19,7 +19,7 @@ npm run start
 
 ```
 
-将在本地创建一个 LeaferJS 项目，并自动下载 [leafer](https://github.com/leaferjs/leafer)、[leafer-ui](https://github.com/leaferjs/ui)、[leafer-in](https://github.com/leaferjs/in) 子仓库代码到 src 目录。
+将在本地创建一个 LeaferJS 项目，并自动下载 [leafer](https://github.com/leaferjs/leafer)、[leafer-ui](https://github.com/leaferjs/ui)、[leafer-draw](https://github.com/leaferjs/draw)、[leafer-in](https://github.com/leaferjs/in) 子仓库代码到 src 目录。
 
 安装启动完成后，可在浏览器中访问：http://localhost:10101
 

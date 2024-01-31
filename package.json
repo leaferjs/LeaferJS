@@ -1,6 +1,6 @@
 {
   "name": "leaferjs",
-  "version": "1.0.0-rc.9",
+  "version": "1.0.0-rc.10",
   "author": "leafer <leaferjs@163.com>",
   "license": "MIT",
   "packageManager": "pnpm@8.7.6",
@@ -19,11 +19,13 @@
     "worker": "cross-env PLATFORM=worker rollup -c",
     "node": "cross-env PLATFORM=node rollup -c",
     "miniapp": "cross-env PLATFORM=miniapp rollup -c",
+    "draw": "cross-env PLATFORM=draw rollup -c",
     "in": "cross-env PLATFORM=in rollup -c",
     "dts": "./scripts/dts.sh",
     "clear": "./scripts/clear.sh",
     "all": "./scripts/all.sh",
-    "test": "vitest"
+    "test": "vitest",
+    "update": "./scripts/update.sh"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.4",

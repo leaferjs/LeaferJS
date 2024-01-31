@@ -18,6 +18,7 @@ function loop() {
 }
 
 loop src/leafer
+loop src/draw
 loop src/ui
 loop src/in
 

@@ -30,14 +30,6 @@ export default defineConfig({
                 replacement: 'src/leafer/packages/image/image$1/src'
             },
             {
-                find: /^@leafer\/event(.*)/,
-                replacement: 'src/leafer/packages/event/event$1/src'
-            },
-            {
-                find: /^@leafer\/interaction(.*)/,
-                replacement: 'src/leafer/packages/interaction/interaction$1/src'
-            },
-            {
                 find: /^@leafer\/(partner|layouter|watcher|renderer|selector)/,
                 replacement: 'src/leafer/packages/partner/$1/src'
             },
@@ -66,11 +58,19 @@ export default defineConfig({
                 replacement: 'src/ui/packages/platform/platform/src'
             },
             {
-                find: /^@leafer-ui\/(display\-module|data|bounds|hit|render)/,
+                find: /^@leafer-ui\/(core|draw)/,
+                replacement: 'src/ui/packages/core/$1/src'
+            },
+            {
+                find: /^@leafer-ui\/(display\-module|data|bounds|render)/,
                 replacement: 'src/ui/packages/display-module/$1/src'
             },
             {
-                find: /^@leafer-ui\/(partner|effect|paint|text|color|export)/,
+                find: /^@leafer-ui\/interaction(.*)/,
+                replacement: 'src/ui/packages/interaction/interaction$1/src'
+            },
+            {
+                find: /^@leafer-ui\/(partner|effect|paint|image|gradient|mask|text|color|export)/,
                 replacement: 'src/ui/packages/partner/$1/src'
             },
             {

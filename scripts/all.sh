@@ -6,4 +6,5 @@ pnpm run web
 pnpm run worker
 pnpm run node
 pnpm run miniapp
+pnpm run draw
 pnpm run in
