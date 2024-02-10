@@ -121,6 +121,13 @@ const platform ={
             withGlobal: 'LeaferIN.html',
             withMin: 'min',
             external
+        },
+        {
+            name: 'arrow',
+            path:  inPath + '/arrow',
+            withGlobal: 'LeaferIN.arrow',
+            withMin: 'min',
+            external
         }
     ]
 } 
