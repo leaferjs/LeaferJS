@@ -128,6 +128,27 @@ const platform ={
             withGlobal: 'LeaferIN.arrow',
             withMin: 'min',
             external
+        },
+          {
+            name: 'view',
+            path:  inPath + '/view',
+            withGlobal: 'LeaferIN.view',
+            withMin: 'min',
+            external
+        },
+        {
+            name: 'scroll',
+            path:  inPath + '/scroll',
+            withGlobal: 'LeaferIN.scroll',
+            withMin: 'min',
+            external
+        },
+        {
+            name: 'state',
+            path:  inPath + '/state',
+            withGlobal: 'LeaferIN.state',
+            withMin: 'min',
+            external
         }
     ]
 } 
