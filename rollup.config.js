@@ -113,6 +113,7 @@ const platform ={
             path:  inPath + '/editor',
             withGlobal: 'LeaferIN.editor',
             withMin: 'min',
+            withFormat: ['cjs'],
             external
         },
         {
@@ -120,6 +121,7 @@ const platform ={
             path:  inPath + '/html',
             withGlobal: 'LeaferIN.html',
             withMin: 'min',
+            withFormat: ['cjs'],
             external
         },
         {
@@ -127,6 +129,7 @@ const platform ={
             path:  inPath + '/arrow',
             withGlobal: 'LeaferIN.arrow',
             withMin: 'min',
+            withFormat: ['cjs'],
             external
         },
           {
@@ -134,6 +137,7 @@ const platform ={
             path:  inPath + '/view',
             withGlobal: 'LeaferIN.view',
             withMin: 'min',
+            withFormat: ['cjs'],
             external
         },
         {
@@ -141,6 +145,7 @@ const platform ={
             path:  inPath + '/scroll',
             withGlobal: 'LeaferIN.scroll',
             withMin: 'min',
+            withFormat: ['cjs'],
             external
         },
         {
@@ -148,6 +153,7 @@ const platform ={
             path:  inPath + '/state',
             withGlobal: 'LeaferIN.state',
             withMin: 'min',
+            withFormat: ['cjs'],
             external
         }
     ]
