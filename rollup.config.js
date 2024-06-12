@@ -114,7 +114,15 @@ const platform ={
             withGlobal: 'LeaferIN.editor',
             withMin: 'min',
             withFormat: ['cjs'],
-            external
+            external: {...external, '@leafer-in/resize': 'LeaferIN.resize'},
+        },
+        {
+            name: 'resize',
+            path:  inPath + '/resize',
+            withGlobal: 'LeaferIN.resize',
+            withMin: 'min',
+            withFormat: ['cjs'],
+            external,
         },
         {
             name: 'html',
