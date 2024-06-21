@@ -37,14 +37,19 @@
                 "src/ui/packages/partner/*/src", 
                 "src/ui/packages/*/src", 
             ],
+            "leafer-in": ["src/in/src"],
+            "@leafer-in/*": [
+                "src/in/packages/*/src", 
+            ],
             "leafer-draw": ["src/draw/src"],
             "@leafer-draw/*": [
                 "src/draw/packages/platform/*/src", 
                 "src/draw/packages/*/src", 
             ],
-            "leafer-in": ["src/in/src"],
-            "@leafer-in/*": [
-                "src/in/packages/*/src", 
+            "leafer-editor": ["src/editor/src"],
+            "@leafer-editor/*": [
+                "src/editor/packages/platform/*/src", 
+                "src/editor/packages/*/src", 
             ]
         },
     },

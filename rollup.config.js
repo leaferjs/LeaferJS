@@ -20,6 +20,7 @@ const external = { '@leafer/core': LeaferUI, '@leafer-ui/draw': LeaferUI, '@leaf
 const inPath = 'src/in/packages'
 const platformPath = 'src/ui/packages/platform'
 const drawPlatformPath = 'src/draw/packages/platform'
+const editorPlatformPath = 'src/editor/packages/platform'
 
 const platform ={
     'core': [
@@ -81,6 +82,41 @@ const platform ={
         }
     ],
 
+     'editor': [
+        {
+            name: 'web',
+            path: 'src/editor',
+            withGlobal: LeaferUI,
+            withMin: 'min',
+            external,
+            fullGlobal: true,
+            withModule: true
+        },
+        {
+            name: 'worker',
+            path:  editorPlatformPath + '/worker',
+            withGlobal: LeaferUI,
+            withMin: 'min',
+            external,
+            fullGlobal: true,
+            withModule: true
+        },
+        {
+            name: 'node',
+            path:  editorPlatformPath + '/node',
+            withMin: 'min',
+            withFormat: ['cjs'],
+            external: {...external, 'fs': 'fs'}
+        },
+        {
+            name: 'miniapp',
+            path:  editorPlatformPath + '/miniapp',
+            withMin: 'min',
+            external,
+            withModule: true
+        }
+    ],
+
     'web': {
         path: 'src/ui',
         withGlobal: LeaferUI,
@@ -104,7 +140,8 @@ const platform ={
     'miniapp': {
         path:  platformPath + '/miniapp',
         withMin: 'min',
-        external
+        external,
+        withModule: true
     },
 
     'in': [
