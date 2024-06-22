@@ -4,7 +4,7 @@
 
 ## 运行
 
-LeaferJS 完全依赖于子仓库 [leafer](https://github.com/leaferjs/leafer)、[leafer-ui](https://github.com/leaferjs/ui)、[leafer-draw](https://github.com/leaferjs/draw)、[leafer-in](https://github.com/leaferjs/in) ， 提供运行官网示例代码、自定义打包的能力。
+LeaferJS 完全依赖于子仓库 [leafer](https://github.com/leaferjs/leafer)、[leafer-ui](https://github.com/leaferjs/ui)、[leafer-in](https://github.com/leaferjs/in)、[leafer-draw](https://github.com/leaferjs/draw)、[leafer-editor](https://github.com/leaferjs/editor) ， 提供运行官网示例代码、自定义打包的能力。
 
 复制以下命令并运行：
 
