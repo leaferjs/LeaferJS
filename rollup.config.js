@@ -15,7 +15,34 @@ const platformName = process.env.PLATFORM
 const dtsPackage = process.env.DTS_PACKAGE
 
 const LeaferUI = 'LeaferUI'
-const external = { '@leafer/core': LeaferUI, '@leafer-ui/draw': LeaferUI, '@leafer-ui/core': LeaferUI}
+
+const external = {
+    '@leafer/core': LeaferUI,
+    '@leafer-ui/draw': LeaferUI,
+    '@leafer-ui/core': LeaferUI,
+}
+
+const pluginExternal = {
+    ...external,
+    '@leafer-in/editor': 'LeaferIN.editor',
+    '@leafer-in/view': 'LeaferIN.view',
+    '@leafer-in/scroll': 'LeaferIN.scroll',
+    '@leafer-in/arrow': 'LeaferIN.arrow',
+    '@leafer-in/html': 'LeaferIN.html',
+}
+
+const LeaferUIExternal = { 
+    ...external,
+    'leafer-ui': LeaferUI,
+    '@leafer-ui/worker': LeaferUI,
+    '@leafer-ui/node': LeaferUI,
+    '@leafer-ui/miniapp': LeaferUI,
+}
+
+const LeaferEditorExternal = {
+    ...LeaferUIExternal,
+    ...pluginExternal
+}
 
 const inPath = 'src/in/packages'
 const platformPath = 'src/ui/packages/platform'
@@ -53,18 +80,18 @@ const platform ={
             path: 'src/draw',
             withGlobal: LeaferUI,
             withMin: 'min',
-            external,
             fullGlobal: true,
-            withModule: true
+            withModule: true,
+            external
         },
         {
             name: 'worker',
             path:  drawPlatformPath + '/worker',
             withGlobal: LeaferUI,
             withMin: 'min',
-            external,
             fullGlobal: true,
-            withModule: true
+            withModule: true,
+            external
         },
         {
             name: 'node',
@@ -77,8 +104,8 @@ const platform ={
             name: 'miniapp',
             path:  drawPlatformPath + '/miniapp',
             withMin: 'min',
-            external,
-            withModule: true
+            withModule: true,
+            external
         }
     ],
 
@@ -117,31 +144,68 @@ const platform ={
         }
     ],
 
+    'editor': [
+        {
+            name: 'web',
+            path: 'src/editor',
+            withGlobal: LeaferUI,
+            withMin: 'min',
+            fullGlobal: true,
+            withModule: true,
+            external: LeaferEditorExternal
+        },
+        {
+            name: 'worker',
+            path:  editorPlatformPath + '/worker',
+            withGlobal: LeaferUI,
+            withMin: 'min',
+            fullGlobal: true,
+            withModule: true,
+            external: LeaferEditorExternal
+        },
+        {
+            name: 'node',
+            path:  editorPlatformPath + '/node',
+            withMin: 'min',
+            withFormat: ['cjs'],
+            external: {...LeaferEditorExternal, 'fs': 'fs'}
+        },
+        {
+            name: 'miniapp',
+            path:  editorPlatformPath + '/miniapp',
+            withMin: 'min',
+            withModule: true,
+            external: LeaferEditorExternal,
+        }
+    ],
+
     'web': {
         path: 'src/ui',
         withGlobal: LeaferUI,
         withMin: 'min',
-        external,
-        fullGlobal: true
+        fullGlobal: true,
+        withModule: true,
+        external
     },
     'worker': {
         path:  platformPath + '/worker',
         withGlobal: LeaferUI,
         withMin: 'min',
-        external,
-        fullGlobal: true
+        fullGlobal: true,
+        withModule: true,
+        external
     },
     'node': {
         path:  platformPath + '/node',
         withMin: 'min',
         withFormat: ['cjs'],
-        external
+        external: {...external, 'fs': 'fs'}
     },
     'miniapp': {
         path:  platformPath + '/miniapp',
         withMin: 'min',
-        external,
-        withModule: true
+        withModule: true,
+        external
     },
 
     'in': [
@@ -151,7 +215,7 @@ const platform ={
             withGlobal: 'LeaferIN.editor',
             withMin: 'min',
             withFormat: ['cjs'],
-            external: {...external, '@leafer-in/resize': 'LeaferIN.resize'},
+            external: pluginExternal
         },
         {
             name: 'resize',
@@ -159,7 +223,7 @@ const platform ={
             withGlobal: 'LeaferIN.resize',
             withMin: 'min',
             withFormat: ['cjs'],
-            external,
+            external: pluginExternal
         },
         {
             name: 'html',
@@ -167,7 +231,7 @@ const platform ={
             withGlobal: 'LeaferIN.html',
             withMin: 'min',
             withFormat: ['cjs'],
-            external
+            external: pluginExternal
         },
         {
             name: 'arrow',
@@ -175,15 +239,15 @@ const platform ={
             withGlobal: 'LeaferIN.arrow',
             withMin: 'min',
             withFormat: ['cjs'],
-            external
+            external: pluginExternal
         },
-          {
+        {
             name: 'view',
             path:  inPath + '/view',
             withGlobal: 'LeaferIN.view',
             withMin: 'min',
             withFormat: ['cjs'],
-            external
+            external: pluginExternal
         },
         {
             name: 'scroll',
@@ -191,7 +255,7 @@ const platform ={
             withGlobal: 'LeaferIN.scroll',
             withMin: 'min',
             withFormat: ['cjs'],
-            external
+            external: pluginExternal
         },
         {
             name: 'state',
@@ -199,7 +263,7 @@ const platform ={
             withGlobal: 'LeaferIN.state',
             withMin: 'min',
             withFormat: ['cjs'],
-            external
+            external: pluginExternal
         }
     ]
 } 
