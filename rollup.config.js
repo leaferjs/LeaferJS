@@ -5,6 +5,7 @@ import terser from "@rollup/plugin-terser"
 import dts from "rollup-plugin-dts"
 
 import html from '@rollup/plugin-html'
+import copy from 'rollup-plugin-copy'
 import livereload from 'rollup-plugin-livereload'
 import serve from 'rollup-plugin-serve'
 
@@ -299,6 +300,7 @@ if(isDev) {
                 title: "LeaferJS",
                 meta: [{charset: 'utf-8'}, {name: 'viewport', content: 'width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no'}]
             }),
+            copy({ targets: [{ src: 'public/*', dest: 'dist/' }]}),
             livereload(),
             serve({contentBase: ['dist/'],  port})
         ]
