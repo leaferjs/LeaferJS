@@ -26,6 +26,7 @@ const external = {
 const pluginExternal = {
     ...external,
     '@leafer-in/editor': 'LeaferIN.editor',
+    '@leafer-in/text-editor': 'LeaferIN.textEditor',
     '@leafer-in/view': 'LeaferIN.view',
     '@leafer-in/scroll': 'LeaferIN.scroll',
     '@leafer-in/arrow': 'LeaferIN.arrow',
@@ -262,6 +263,22 @@ const platform ={
             name: 'state',
             path:  inPath + '/state',
             withGlobal: 'LeaferIN.state',
+            withMin: 'min',
+            withFormat: ['cjs'],
+            external: pluginExternal
+        },
+         {
+            name: 'flow',
+            path:  inPath+ '/flow',
+            withGlobal: 'LeaferIN.flow',
+            withMin: 'min',
+            withFormat: ['cjs'],
+            external: pluginExternal
+        },
+        {
+            name: 'text-editor',
+            path:  inPath + '/text-editor',
+            withGlobal: 'LeaferIN.textEditor',
             withMin: 'min',
             withFormat: ['cjs'],
             external: pluginExternal
