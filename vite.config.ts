@@ -76,6 +76,10 @@ export default defineConfig({
             {
                 find: /^@leafer-ui\/(.*)/,
                 replacement: 'src/ui/packages/$1/src'
+            },
+            {
+                find: /^@leafer-in\/(.*)/,
+                replacement: '/src/in/packages/$1/src'
             }
         ],
         include: ['src/test/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}', 'src/ui/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}', 'src/leafer/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}']

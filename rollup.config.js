@@ -31,6 +31,11 @@ const pluginExternal = {
     '@leafer-in/scroll': 'LeaferIN.scroll',
     '@leafer-in/arrow': 'LeaferIN.arrow',
     '@leafer-in/html': 'LeaferIN.html',
+    '@leafer-in/flow': 'LeaferIN.Flow',
+    '@leafer-in/animate': 'LeaferIN.Animate',
+    '@leafer-in/robot': 'LeaferIN.Robot',
+    //'@leafer-in/color': 'LeaferIN.color' 不能引入进来
+    //'@leafer-in/resize': 'LeaferIN.resize' 不能引入进来
 }
 
 const LeaferUIExternal = { 
@@ -279,6 +284,30 @@ const platform ={
             name: 'text-editor',
             path:  inPath + '/text-editor',
             withGlobal: 'LeaferIN.textEditor',
+            withMin: 'min',
+            withFormat: ['cjs'],
+            external: pluginExternal
+        },
+        {
+            name: 'animate',
+            path:  inPath+ '/animate',
+            withGlobal: 'LeaferIN.Animate',
+            withMin: 'min',
+            withFormat: ['cjs'],
+            external: pluginExternal
+        },
+        {
+            name: 'robot',
+            path:  inPath+ '/robot',
+            withGlobal: 'LeaferIN.Robot',
+            withMin: 'min',
+            withFormat: ['cjs'],
+            external: pluginExternal
+        },
+        {
+            name: 'color',
+            path:  inPath+ '/color',
+            withGlobal: 'LeaferIN.color',
             withMin: 'min',
             withFormat: ['cjs'],
             external: pluginExternal
