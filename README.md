@@ -4,7 +4,7 @@
 
 ## 运行
 
-LeaferJS 完全依赖于子仓库 [leafer](https://github.com/leaferjs/leafer)、[leafer-ui](https://github.com/leaferjs/ui)、[leafer-in](https://github.com/leaferjs/in)、[leafer-draw](https://github.com/leaferjs/draw)、[leafer-editor](https://github.com/leaferjs/editor) ， 提供运行官网示例代码、自定义打包的能力。
+LeaferJS 完全依赖于子仓库 [leafer](https://github.com/leaferjs/leafer)、[leafer-ui](https://github.com/leaferjs/leafer-ui)、[leafer-in](https://github.com/leaferjs/leafer-in)、[leafer-draw](https://github.com/leaferjs/leafer-draw)、[leafer-editor](https://github.com/leaferjs/leafer-editor) ， 提供运行官网示例代码、自定义打包的能力。
 
 复制以下命令并运行：
 
@@ -19,7 +19,7 @@ npm run start
 
 ```
 
-将在本地创建一个 LeaferJS 项目，并自动下载 [leafer](https://github.com/leaferjs/leafer)、[leafer-ui](https://github.com/leaferjs/ui)、[leafer-in](https://github.com/leaferjs/in)、[leafer-draw](https://github.com/leaferjs/draw)、[leafer-editor](https://github.com/leaferjs/editor) 子仓库代码到 src 目录。
+将在本地创建一个 LeaferJS 项目，并自动下载 [leafer](https://github.com/leaferjs/leafer)、[leafer-ui](https://github.com/leaferjs/leafer-ui)、[leafer-in](https://github.com/leaferjs/leafer-in)、[leafer-draw](https://github.com/leaferjs/leafer-draw)、[leafer-editor](https://github.com/leaferjs/leafer-editor) 子仓库代码到 src 目录。
 
 安装启动完成后，可在浏览器中访问：http://localhost:10101
 
