@@ -321,7 +321,11 @@ const plugins = [
         preferBuiltins: false,
     }),
     typescript({ 
-        tsconfig: './tsconfig.json' 
+        tsconfig: './tsconfig.json',
+        ...(isDev && {
+            sourceMap: true,
+            inlineSources: true
+        })
     }),
     commonjs()
 ]
