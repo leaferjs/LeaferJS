@@ -51,10 +51,15 @@ const LeaferEditorExternal = {
     ...pluginExternal
 }
 
+const LeaferGameExternal = {
+    ...LeaferUIExternal,
+    ...pluginExternal
+}
 const inPath = 'src/in/packages'
 const platformPath = 'src/ui/packages/platform'
 const drawPlatformPath = 'src/draw/packages/platform'
 const editorPlatformPath = 'src/editor/packages/platform'
+const gamePlatformPath = 'src/game/packages/platform'
 
 const platform ={
     'core': [
@@ -183,6 +188,44 @@ const platform ={
             withMin: 'min',
             withModule: true,
             external: LeaferEditorExternal,
+        }
+    ],
+
+     'game': [
+        {
+            name: 'web',
+            path: 'src/game',
+            withGlobal: LeaferUI,
+            withMin: 'min',
+            withFormat: ['cjs'],
+            fullGlobal: true,
+            withModule: true,
+            external: LeaferGameExternal
+        },
+        {
+            name: 'worker',
+            path:  gamePlatformPath + '/worker',
+            withGlobal: LeaferUI,
+            withMin: 'min',
+            withFormat: ['cjs'],
+            fullGlobal: true,
+            withModule: true,
+            external: LeaferGameExternal
+        },
+        {
+            name: 'node',
+            path:  gamePlatformPath + '/node',
+            withMin: 'min',
+            withFormat: ['cjs'],
+            external: {...LeaferGameExternal, 'fs': 'fs'}
+        },
+        {
+            name: 'miniapp',
+            path:  gamePlatformPath + '/miniapp',
+            withMin: 'min',
+            withFormat: ['cjs'],
+            withModule: true,
+            external: LeaferGameExternal,
         }
     ],
 

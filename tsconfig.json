@@ -50,6 +50,11 @@
             "@leafer-editor/*": [
                 "src/editor/packages/platform/*/src", 
                 "src/editor/packages/*/src", 
+            ],
+            "leafer-game": ["src/game/src"],
+            "@leafer-game/*": [
+                "src/game/packages/platform/*/src", 
+                "src/game/packages/*/src", 
             ]
         },
     },

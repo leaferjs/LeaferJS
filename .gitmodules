@@ -13,3 +13,6 @@
 [submodule "src/editor"]
 	path = src/editor
 	url = https://github.com/leaferjs/leafer-editor.git
+[submodule "src/game"]
+	path = src/game
+	url = https://github.com/leaferjs/leafer-game.git
