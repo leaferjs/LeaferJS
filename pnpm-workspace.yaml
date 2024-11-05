@@ -21,3 +21,6 @@ packages:
   - 'src/editor'
   - 'src/editor/packages/*'
   - 'src/editor/packages/platform/*'
+  - 'src/game'
+  - 'src/game/packages/*'
+  - 'src/game/packages/platform/*'
