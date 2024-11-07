@@ -14,6 +14,10 @@ cd src/draw
 git pull origin main
 cd ../../
 
+cd src/game
+git pull origin main
+cd ../../
+
 cd src/editor
 git pull origin main
 cd ../../
