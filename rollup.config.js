@@ -27,15 +27,18 @@ const pluginExternal = {
     ...external,
     '@leafer-in/editor': 'LeaferIN.editor',
     '@leafer-in/text-editor': 'LeaferIN.textEditor',
+    '@leafer-in/viewport': 'LeaferIN.viewport',
     '@leafer-in/view': 'LeaferIN.view',
     '@leafer-in/scroll': 'LeaferIN.scroll',
     '@leafer-in/arrow': 'LeaferIN.arrow',
     '@leafer-in/html': 'LeaferIN.html',
-    '@leafer-in/flow': 'LeaferIN.Flow',
-    '@leafer-in/animate': 'LeaferIN.Animate',
-    '@leafer-in/robot': 'LeaferIN.Robot',
-    //'@leafer-in/color': 'LeaferIN.color' 不能引入进来
-    //'@leafer-in/resize': 'LeaferIN.resize' 不能引入进来
+    '@leafer-in/flow': 'LeaferIN.flow',
+    '@leafer-in/animate': 'LeaferIN.animate',
+    '@leafer-in/motion-path': 'LeaferIN.motionPath',
+    '@leafer-in/state': 'LeaferIN.state',
+    '@leafer-in/robot': 'LeaferIN.robot',
+    '@leafer-in/color': 'LeaferIN.color',
+    '@leafer-in/resize': 'LeaferIN.resize'
 }
 
 const LeaferUIExternal = { 
@@ -258,6 +261,7 @@ const platform ={
         external
     },
 
+   
     'in': [
         {
             name: 'editor',
@@ -315,7 +319,7 @@ const platform ={
             withFormat: ['cjs'],
             external: pluginExternal
         },
-         {
+        {
             name: 'flow',
             path:  inPath+ '/flow',
             withGlobal: 'LeaferIN.flow',
@@ -334,7 +338,7 @@ const platform ={
         {
             name: 'animate',
             path:  inPath+ '/animate',
-            withGlobal: 'LeaferIN.Animate',
+            withGlobal: 'LeaferIN.animate',
             withMin: 'min',
             withFormat: ['cjs'],
             external: pluginExternal
@@ -342,7 +346,7 @@ const platform ={
         {
             name: 'robot',
             path:  inPath+ '/robot',
-            withGlobal: 'LeaferIN.Robot',
+            withGlobal: 'LeaferIN.robot',
             withMin: 'min',
             withFormat: ['cjs'],
             external: pluginExternal
@@ -354,8 +358,24 @@ const platform ={
             withMin: 'min',
             withFormat: ['cjs'],
             external: pluginExternal
+        },
+        {
+            name: 'motion-path',
+            path:  inPath+ '/motion-path',
+            withGlobal: 'LeaferIN.motionPath',
+            withMin: 'min',
+            withFormat: ['cjs'],
+            external: pluginExternal
+        },
+        {
+            name: 'viewport',
+            path:  inPath+ '/viewport',
+            withGlobal: 'LeaferIN.viewport',
+            withMin: 'min',
+            withFormat: ['cjs'],
+            external: pluginExternal
         }
-    ]
+    ],
 } 
 
 const plugins = [ 
