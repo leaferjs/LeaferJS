@@ -37,6 +37,9 @@ const pluginExternal = {
     '@leafer-in/motion-path': 'LeaferIN.motionPath',
     '@leafer-in/state': 'LeaferIN.state',
     '@leafer-in/robot': 'LeaferIN.robot',
+    '@leafer-in/find': 'LeaferIN.find',
+    '@leafer-in/export': 'LeaferIN.export',
+    '@leafer-in/filter': 'LeaferIN.filter',
     '@leafer-in/color': 'LeaferIN.color',
     '@leafer-in/resize': 'LeaferIN.resize'
 }
@@ -371,6 +374,14 @@ const platform ={
             name: 'viewport',
             path:  inPath+ '/viewport',
             withGlobal: 'LeaferIN.viewport',
+            withMin: 'min',
+            withFormat: ['cjs'],
+            external: pluginExternal
+        },
+        {
+            name: 'filter',
+            path:  inPath+ '/filter',
+            withGlobal: 'LeaferIN.filter',
             withMin: 'min',
             withFormat: ['cjs'],
             external: pluginExternal
