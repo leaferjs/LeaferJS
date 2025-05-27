@@ -1,6 +1,6 @@
 {
   "name": "leaferjs",
-  "version": "1.6.3",
+  "version": "1.6.6",
   "author": "leafer <leaferjs@163.com>",
   "license": "MIT",
   "packageManager": "pnpm@8.7.6",
