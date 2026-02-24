@@ -22,8 +22,9 @@
         "paths": {
             "leafer": ["src/leafer/src"],
             "@leafer/*": [
-                "src/leafer/packages/display-module/*/src",
+                "src/leafer/packages/core/*/src",
                 "src/leafer/packages/platform/*/src",
+                "src/leafer/packages/display-module/*/src",
                 "src/leafer/packages/canvas/*/src",
                 "src/leafer/packages/image/*/src",
                 "src/leafer/packages/partner/*/src",

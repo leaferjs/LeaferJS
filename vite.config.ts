@@ -22,6 +22,10 @@ export default defineConfig({
                 replacement: 'src/leafer/packages/platform/platform/src'
             },
             {
+                find: /^@leafer\/(.*)core/,
+                replacement: '/src/leafer/packages/core/$1core/src'
+            },
+            {
                 find: /^@leafer\/canvas(.*)/,
                 replacement: 'src/leafer/packages/canvas/canvas$1/src'
             },
