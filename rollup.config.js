@@ -45,6 +45,7 @@ const pluginExternal = {
   '@leafer-in/bright': 'LeaferIN.bright',
   '@leafer-in/scroller': 'LeaferIN.scroller',
   '@leafer-in/scale-fixed': 'LeaferIN.scaleFixed',
+  '@leafer-in/box': 'LeaferIN.box',
 }
 
 const LeaferUIExternal = {
@@ -424,6 +425,14 @@ const platform = {
       name: 'scale-fixed',
       path: inPath + '/scale-fixed',
       withGlobal: 'LeaferIN.scaleFixed',
+      withMin: 'min',
+      withFormat: ['cjs'],
+      external: pluginExternal,
+    },
+    {
+      name: 'box',
+      path: inPath + '/box',
+      withGlobal: 'LeaferIN.box',
       withMin: 'min',
       withFormat: ['cjs'],
       external: pluginExternal,
