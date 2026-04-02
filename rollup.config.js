@@ -46,6 +46,7 @@ const pluginExternal = {
   '@leafer-in/scroller': 'LeaferIN.scroller',
   '@leafer-in/scale-fixed': 'LeaferIN.scaleFixed',
   '@leafer-in/box': 'LeaferIN.box',
+  '@leafer-in/corner': 'LeaferIN.corner',
 }
 
 const LeaferUIExternal = {
@@ -433,6 +434,14 @@ const platform = {
       name: 'box',
       path: inPath + '/box',
       withGlobal: 'LeaferIN.box',
+      withMin: 'min',
+      withFormat: ['cjs'],
+      external: pluginExternal,
+    },
+    {
+      name: 'corner',
+      path: inPath + '/corner',
+      withGlobal: 'LeaferIN.corner',
       withMin: 'min',
       withFormat: ['cjs'],
       external: pluginExternal,
