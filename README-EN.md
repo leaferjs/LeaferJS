@@ -2,15 +2,40 @@ English | [简体中文](./README.md)
 
 <br/>
 
-# 🎨 LeaferJS
+# LeaferJS: An Easy-to-Use Canvas Engine
 
-**A high-performance 2D graphics engine for the web.**
+Effortlessly build graphic interaction and editing — an infinite canvas engine for the AI era
 
-LeaferJS is an open-source graphics engine designed to help developers build interactive graphics applications, design tools, and infinite canvases.
+Official Website: [leaferjs.com](https://www.leaferjs.com)
 
-This repository integrates the LeaferJS ecosystem, bringing together the core engine and its extensions for local development, live examples, and custom builds.
+Open Forest: [leafer.pro](https://www.leafer.pro)
+
+PxGrow: [pxgrow.com](https://www.pxgrow.com)
+
+**👉 A Canvas engine that can handle 1 million graphics in the browser**  
+**👉 A Canvas core capable of building Figma-level editors**
+
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=bJ6fHMQdATs" target="_blank">
+    <img src="https://www.leaferjs.com/image/video/leaferjs-en.jpg" />
+  </a>
+</p>
+<p align="center">
+<b>Extreme Performance · Ultra-Low Memory · DOM-like API · Graphic Editing · Cross-Platform · Zero Dependencies · Lightweight (70KB min+gzip)</b>
+</p>
+
+<div align="center">
+
+[![NPM Downloads](https://img.shields.io/npm/dm/@leafer-ui/draw?style=flat-square&color=32cd79)](https://www.npmjs.com/package/@leafer-ui/draw)
+[![GitHub Stars](https://img.shields.io/github/stars/leaferjs/leafer-ui?style=flat-square&label=Stars&color=ffd700)](https://github.com/leaferjs/leafer-ui/stargazers)
+[![GitHub Release](https://img.shields.io/github/v/release/leaferjs/leafer-ui)](https://github.com/leaferjs/leafer-ui/releases)
+[![GitHub License](https://img.shields.io/github/license/leaferjs/leafer-ui)](https://github.com/leaferjs/leafer-ui/blob/main/LICENSE)
+
+</div>
 
 ## 🧩 Repositories
+
+This repository integrates the LeaferJS ecosystem, bringing together the core engine and its extensions for local development, live examples, and custom builds.
 
 | Repository                                                 | Description                   |
 | ---------------------------------------------------------- | ----------------------------- |
@@ -71,37 +96,6 @@ Choose the build command that best fits your needs:
 | `npm run all`   | Build for all supported environments                             |
 | `npm run dts`   | Generate TypeScript declaration files (`.d.ts`) for all packages |
 | `npm run clear` | Clean up build artifacts                                         |
-
-# LeaferJS: An Easy-to-Use Canvas Engine
-
-Effortlessly build graphic interaction and editing — an infinite canvas engine for the AI era
-
-Official Website: [leaferjs.com](https://www.leaferjs.com)
-
-Open Forest: [leafer.pro](https://www.leafer.pro)
-
-PxGrow: [pxgrow.com](https://www.pxgrow.com)
-
-**👉 A Canvas engine that can handle 1 million graphics in the browser**  
-**👉 A Canvas core capable of building Figma-level editors**
-
-<p align="center">
-  <a href="https://www.youtube.com/watch?v=bJ6fHMQdATs" target="_blank">
-    <img src="https://www.leaferjs.com/image/video/leaferjs-en.jpg" />
-  </a>
-</p>
-<p align="center">
-<b>Extreme Performance · Ultra-Low Memory · DOM-like API · Graphic Editing · Cross-Platform · Zero Dependencies · Lightweight (70KB min+gzip)</b>
-</p>
-
-<div align="center">
-
-[![NPM Downloads](https://img.shields.io/npm/dm/@leafer-ui/draw?style=flat-square&color=32cd79)](https://www.npmjs.com/package/@leafer-ui/draw)
-[![GitHub Stars](https://img.shields.io/github/stars/leaferjs/leafer-ui?style=flat-square&label=Stars&color=ffd700)](https://github.com/leaferjs/leafer-ui/stargazers)
-[![GitHub Release](https://img.shields.io/github/v/release/leaferjs/leafer-ui)](https://github.com/leaferjs/leafer-ui/releases)
-[![GitHub License](https://img.shields.io/github/license/leaferjs/leafer-ui)](https://github.com/leaferjs/leafer-ui/blob/main/LICENSE)
-
-</div>
 
 ## 🧐 Why Choose LeaferJS?
 

@@ -2,15 +2,40 @@
 
 <br/>
 
-# 🎨 LeaferJS
+# LeaferJS：好用的 Canvas 引擎
 
-**面向 Web 的高性能 2D 图形引擎。**
+轻松实现图形交互与编辑，AI 时代的无限画布引擎
 
-LeaferJS 是一个开源图形引擎，旨在帮助开发者构建交互式图形应用、设计工具与无限画布。
+开源官网: [leaferjs.com](https://www.leaferjs.com)
 
-本仓库是 LeaferJS 的集成仓库，整合核心引擎及相关扩展，提供本地开发、运行示例和自定义打包的能力。
+开源森林: [leafer.pro](https://www.leafer.pro)
+
+PxGrow: [pxgrow.com](https://www.pxgrow.com)
+
+**👉 在浏览器里 “跑得动 100 万个图形” 的 Canvas 引擎**  
+**👉 可以做 “Figma 级编辑器” 的 Canvas 内核**
+
+<p align="center">
+  <a href="https://www.bilibili.com/video/BV1E56vBwEiB" target="_blank">
+    <img src="https://www.leaferjs.com/image/video/leaferjs.jpg?d=1126" />
+  </a>
+</p>
+<p align="center">
+<b>极致性能 · 极低内存 · 类 DOM API · 图形编辑 · 跨平台 · 零依赖 · 轻量 (70KB min+gzip)</b>
+</p>
+
+<div align="center">
+
+[![NPM Downloads](https://img.shields.io/npm/dm/@leafer-ui/draw?style=flat-square&color=32cd79)](https://www.npmjs.com/package/@leafer-ui/draw)
+[![GitHub Stars](https://img.shields.io/github/stars/leaferjs/leafer-ui?style=flat-square&label=Stars&color=ffd700)](https://github.com/leaferjs/leafer-ui/stargazers)
+[![GitHub Release](https://img.shields.io/github/v/release/leaferjs/leafer-ui)](https://github.com/leaferjs/leafer-ui/releases)
+[![GitHub License](https://img.shields.io/github/license/leaferjs/leafer-ui)](https://github.com/leaferjs/leafer-ui/blob/main/LICENSE)
+
+</div>
 
 ## 🧩 子仓库
+
+本仓库是 LeaferJS 的集成仓库，整合核心引擎及相关扩展，提供本地开发、运行示例和自定义打包的能力。
 
 | 仓库                                                       | 说明                 |
 | ---------------------------------------------------------- | -------------------- |
@@ -71,37 +96,6 @@ git pull --recurse-submodules
 | `npm run all`   | 打包所有环境的代码                              |
 | `npm run dts`   | 生成所有包的 TypeScript 类型声明文件（`.d.ts`） |
 | `npm run clear` | 清理打包产物                                    |
-
-# LeaferJS：好用的 Canvas 引擎
-
-轻松实现图形交互与编辑，AI 时代的无限画布引擎
-
-开源官网: [leaferjs.com](https://www.leaferjs.com)
-
-开源森林: [leafer.pro](https://www.leafer.pro)
-
-PxGrow: [pxgrow.com](https://www.pxgrow.com)
-
-**👉 在浏览器里 “跑得动 100 万个图形” 的 Canvas 引擎**  
-**👉 可以做 “Figma 级编辑器” 的 Canvas 内核**
-
-<p align="center">
-  <a href="https://www.bilibili.com/video/BV1E56vBwEiB" target="_blank">
-    <img src="https://www.leaferjs.com/image/video/leaferjs.jpg?d=1126" />
-  </a>
-</p>
-<p align="center">
-<b>极致性能 · 极低内存 · 类 DOM API · 图形编辑 · 跨平台 · 零依赖 · 轻量 (70KB min+gzip)</b>
-</p>
-
-<div align="center">
-
-[![NPM Downloads](https://img.shields.io/npm/dm/@leafer-ui/draw?style=flat-square&color=32cd79)](https://www.npmjs.com/package/@leafer-ui/draw)
-[![GitHub Stars](https://img.shields.io/github/stars/leaferjs/leafer-ui?style=flat-square&label=Stars&color=ffd700)](https://github.com/leaferjs/leafer-ui/stargazers)
-[![GitHub Release](https://img.shields.io/github/v/release/leaferjs/leafer-ui)](https://github.com/leaferjs/leafer-ui/releases)
-[![GitHub License](https://img.shields.io/github/license/leaferjs/leafer-ui)](https://github.com/leaferjs/leafer-ui/blob/main/LICENSE)
-
-</div>
 
 ## 🧐 为什么选择LeaferJS？
 
