@@ -150,14 +150,6 @@ Test environment: 2K laptop screen / Chrome V143.0. Results are for reference on
 
 ## 🛠️ Quick Start
 
-```sh
-npm install leafer-ui
-
-# When using plugins, it is recommended to install core packages together
-# to avoid version mismatch issues
-npm install leafer-ui @leafer-ui/core @leafer-ui/draw
-```
-
 ```ts
 import { Leafer, Rect } from 'leafer-ui'
 

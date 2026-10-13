@@ -150,13 +150,6 @@ LeaferJS 将 Web 图形处理的“天花板”向上推举了约 10 倍。
 
 ## 🛠️ 快速上手
 
-```sh
-npm install leafer-ui
-
-# 需使用插件时，推荐同时安装跨平台核心包，防止出现更新版本不同步问题
-npm install leafer-ui @leafer-ui/core @leafer-ui/draw
-```
-
 ```ts
 import { Leafer, Rect } from 'leafer-ui'
 
