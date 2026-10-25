@@ -33,6 +33,7 @@ const pluginExternal = {
   '@leafer-in/arrow': 'LeaferIN.arrow',
   '@leafer-in/html': 'LeaferIN.html',
   '@leafer-in/flow': 'LeaferIN.flow',
+  '@leafer-in/position': 'LeaferIN.position',
   '@leafer-in/animate': 'LeaferIN.animate',
   '@leafer-in/motion-path': 'LeaferIN.motionPath',
   '@leafer-in/state': 'LeaferIN.state',
@@ -52,6 +53,9 @@ const pluginExternal = {
   '@leafer-in/transition': 'LeaferIN.transition',
   '@leafer-in/stroke-sides': 'LeaferIN.strokeSides',
   '@leafer-in/motion-text': 'LeaferIN.motionText',
+  '@leafer-in/film': 'LeaferIN.film',
+  '@leafer-in/video': 'LeaferIN.video',
+  '@leafer-in/image-filter': 'LeaferIN.imageFilter',
 }
 
 const LeaferUIExternal = {
@@ -305,6 +309,14 @@ const platform = {
       external: pluginExternal,
     },
     {
+      name: 'position',
+      path: inPath + '/position',
+      withGlobal: 'LeaferIN.position',
+      withMin: 'min',
+      withFormat: ['cjs'],
+      external: pluginExternal,
+    },
+    {
       name: 'animate',
       path: inPath + '/animate',
       withGlobal: 'LeaferIN.animate',
@@ -452,6 +464,30 @@ const platform = {
       name: 'motion-text',
       path: inPath + '/motion-text',
       withGlobal: 'LeaferIN.motionText',
+      withMin: 'min',
+      withFormat: ['cjs'],
+      external: pluginExternal,
+    },
+    {
+      name: 'video',
+      path: inPath + '/video',
+      withGlobal: 'LeaferIN.video',
+      withMin: 'min',
+      withFormat: ['cjs'],
+      external: pluginExternal,
+    },
+    {
+      name: 'film',
+      path: inPath + '/film',
+      withGlobal: 'LeaferIN.film',
+      withMin: 'min',
+      withFormat: ['cjs'],
+      external: pluginExternal,
+    },
+    {
+      name: 'image-filter',
+      path: inPath + '/image-filter',
+      withGlobal: 'LeaferIN.imageFilter',
       withMin: 'min',
       withFormat: ['cjs'],
       external: pluginExternal,
