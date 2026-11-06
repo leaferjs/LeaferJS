@@ -6,6 +6,8 @@
 
 轻松构建可交互、可编辑的图形应用，AI 时代的无限画布引擎
 
+[让每个人都能用 AI 创造自己的专业图形软件](https://www.leaferjs.com/ui/blog/2026-11-02.html)
+
 开源官网: [leaferjs.com](https://www.leaferjs.com)
 
 开源森林: [leafer.pro](https://www.leafer.pro)
