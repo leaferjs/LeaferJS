@@ -196,23 +196,23 @@ There is a significant gap between “an engine” and “a mature product.” T
 | **code**      | Example code                     | [GitHub](https://github.com/leaferjs/code)      |
 | **docs**      | Documentation                    | [GitHub](https://github.com/leaferjs/docs)      |
 
-## 🌟 Contribute: Five Years of Craftsmanship, Built from Passion
+## 🌟 Five Years of Dedication, Staying True to Our Vision
 
-LeaferJS is an original open-source engine refined over five years. Our mission is to standardize the **graphics system foundation**, so developers can focus on creativity rather than low-level implementation.
+LeaferJS [started in 2021](https://www.leaferjs.com/ui/blog/2023-06-28.html) and is an original open-source graphics engine that has been continuously developed and refined for over five years. We are committed to standardizing the foundations of graphics systems, allowing developers to focus on product creativity rather than underlying implementations.
 
-**If you value originality and extreme performance, please give us a Star!**
+**If you support original innovation, please give us a Star!**
 
 <div style="display:flex; gap: 12px">
-<a target="_blank" href="https://github.com/leaferjs/leafer-ui" aria-label="github"  rel="noopener">
+<a target="_blank" href="https://github.com/leaferjs/leafer-ui" aria-label="github" rel="noopener">
   <img width="120" title="github" src="https://img.shields.io/github/stars/leaferjs/ui?style=social" />
 </a>
 </div>
 
-- 🌟 **Star the repo:** Your support means everything.
-- 🐞 **Report issues:** Every issue helps us improve.
-- 🤝 **Join the community:** Explore the limits of Web graphics together.
+- 🌟 **Star the Repository:** Your recognition means a lot to us.
+- 🐞 **Submit Feedback:** Every issue is an opportunity for us to improve.
+- 🤝 **Join the Community:** Explore the limits of Web graphics technology with fellow developers.
 
-## Contribution Guide
+## Contributing
 
 When you use LeaferJS, you become part of this vibrant community — stepping into a growing “tech castle.” Only through collective participation can it truly flourish.
 

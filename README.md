@@ -212,17 +212,23 @@ LeaferJS 是一个持续打磨了五年的原创开源引擎。我们致力于�
 - 🐞 **提交反馈：** 每一个 Issue 都是我们进步的机会。
 - 🤝 **加入社区：** 与社区开发者共同探索 Web 图形技术的极限。
 
-## 贡献指南
+## 🌟 五年打磨，初心不变
 
-当你使用 LeaferJS 时, 你就已成为了 这个充满活力的大家庭 的一员，踏入这座建设中的“技术城堡”。只有通过每位成员的热情参与与贡献，这座城堡才能逐步走向完善。
+LeaferJS [始于 2021 年](https://www.leaferjs.com/ui/blog/2023-06-28.html)，是一款历经五年持续研发与打磨的原创开源图形引擎。我们致力于把“图形系统底座”这件事标准化，让开发者专注产品创意，而非底层实现。
 
-[社区行为准则](https://github.com/leaferjs/leafer-ui/blob/main/contributor/CODE_OF_CONDUCT.md)
+**如果你支持原创，请为我们点亮一颗 Star！**
 
-[代码提交规范](https://github.com/leaferjs/leafer-ui/blob/main/contributor/COMMIT_CONVENTION.md)
+<div style="display:flex; gap: 12px">
+<a target="_blank" href="https://github.com/leaferjs/leafer-ui" aria-label="github"  rel="noopener">
+  <img width="120" title="github" src="https://img.shields.io/github/stars/leaferjs/ui?style=social" />
+</a>
+</div>
 
-[提问的智慧](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md#%E6%8F%90%E9%97%AE%E7%9A%84%E6%99%BA%E6%85%A7)
+- 🌟 **Star 仓库：** 你的认可对我们至关重要。
+- 🐞 **提交反馈：** 每一个 Issue 都是我们进步的机会。
+- 🤝 **加入社区：** 与社区开发者共同探索 Web 图形技术的极限。
 
-## 致谢贡献者
+## 参与贡献
 
 [每一位参与开源森林的创作者](https://www.leafer.pro/#creator)
 
