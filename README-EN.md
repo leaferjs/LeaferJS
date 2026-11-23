@@ -178,7 +178,7 @@ leafer.add(rect)
 There is a significant gap between “an engine” and “a mature product.” To ensure long-term maintenance of the open-source engine and help enterprises overcome complex development challenges, we’ve built a transparent and sustainable ecosystem:
 
 - **LeaferJS is Permanently Open Source (MIT):** The core features and essential plugins will always remain open source and freely available, meeting the needs of the vast majority of projects. Developers can rely on a secure, controllable, and sustainable technology choice without worrying that core capabilities will become commercially restricted.
-- **PxGrow Provides Optional Commercial Plugins:** Focused on solving complex challenges in **industrial-grade applications**, PxGrow offers professional editor suites, and performance optimization capabilities, helping enterprises save months or even years of development time.
+- **PxGrow Provides Optional Commercial Plugins:** Focused on solving complex challenges in **industrial-grade applications**, including a professional design editor suite and high-performance solutions for specialized scenarios, helping enterprises save months or even years of development effort.
 - **A Virtuous Cycle with a Long-Term Vision:** Developers benefit from open source, enterprises gain efficiency through commercial capabilities, and commercial support continuously drives the growth and innovation of LeaferJS—creating an open, transparent, and sustainable ecosystem.
 
 ## LeaferJS Repository Overview
